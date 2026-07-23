@@ -3,1311 +3,308 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Explore 425 Churchill Rd, a three-unit property in West Palm Beach. Request pricing, full details, or a private showing from The Jacques Real Estate Team."
-  />
-  <title>425 Churchill Rd | The Jacques Real Estate Team</title>
+
+  <title>425 Churchill Road | West Palm Beach, FL 33405</title>
+  <meta name="description" content="View 425 Churchill Road in West Palm Beach, FL 33405. A rare triplex offering in SoSo with two separate buildings, 4 bedrooms, 4.5 bathrooms, 2,260 sq ft, and flexible rental or owner-occupant potential." />
 
   <style>
-    :root {
-      --black: #0b0b0b;
-      --black-soft: #141414;
-      --charcoal: #202020;
-      --cream: #f6f2ea;
-      --white: #ffffff;
-      --muted: #b9b3aa;
-      --gold: #c5a46d;
-      --gold-light: #dfc28d;
-      --line: rgba(255, 255, 255, 0.13);
-      --max-width: 1180px;
-      --shadow: 0 22px 60px rgba(0, 0, 0, 0.34);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      background: var(--black);
-      color: var(--cream);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    body,
-    button,
-    input,
-    textarea {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    button {
-      cursor: pointer;
-    }
-
-    .container {
-      width: min(var(--max-width), calc(100% - 40px));
-      margin: 0 auto;
-    }
-
-    .section {
-      padding: 92px 0;
-    }
-
-    .section-dark {
-      background: var(--black-soft);
-    }
-
-    .eyebrow {
-      margin: 0 0 14px;
-      color: var(--gold-light);
-      font-size: 0.76rem;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-    }
-
-    h1,
-    h2,
-    h3 {
-      margin-top: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: 400;
-    }
-
-    h1 {
-      max-width: 800px;
-      margin-bottom: 18px;
-      font-size: clamp(3rem, 7vw, 5.7rem);
-      line-height: 0.98;
-      letter-spacing: -0.045em;
-    }
-
-    h2 {
-      margin-bottom: 22px;
-      font-size: clamp(2.35rem, 4.7vw, 4rem);
-      line-height: 1.06;
-      letter-spacing: -0.035em;
-    }
-
-    h3 {
-      margin-bottom: 10px;
-      font-size: 1.45rem;
-    }
-
-    p {
-      margin-top: 0;
-    }
-
-    .button {
-      display: inline-flex;
-      min-height: 52px;
-      align-items: center;
-      justify-content: center;
-      padding: 0 22px;
-      border: 1px solid transparent;
-      font-size: 0.86rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-align: center;
-      text-transform: uppercase;
-      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    .button-primary {
-      background: var(--gold);
-      color: #12100d;
-    }
-
-    .button-primary:hover {
-      background: var(--gold-light);
-    }
-
-    .button-outline {
-      border-color: rgba(255, 255, 255, 0.55);
-      background: rgba(0, 0, 0, 0.28);
-      color: var(--white);
-    }
-
-    .button-outline:hover {
-      border-color: var(--gold-light);
-      color: var(--gold-light);
-    }
-
-    /* HEADER */
-    .site-header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 50;
-      width: 100%;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.1));
-    }
-
-    .header-inner {
-      min-height: 82px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 28px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .brand img {
-      width: 48px;
-      height: 48px;
-      object-fit: cover;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    .brand-text {
-      display: grid;
-      line-height: 1.15;
-    }
-
-    .brand-text strong {
-      font-size: 0.94rem;
-      letter-spacing: 0.035em;
-    }
-
-    .brand-text span {
-      margin-top: 5px;
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 0.66rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .nav-links a:not(.nav-button) {
-      color: rgba(255, 255, 255, 0.82);
-    }
-
-    .nav-links a:not(.nav-button):hover {
-      color: var(--gold-light);
-    }
-
-    .nav-button {
-      padding: 11px 17px;
-      border: 1px solid var(--gold-light);
-      color: var(--gold-light);
-    }
-
-    /* HERO */
-    .hero {
-      position: relative;
-      min-height: 760px;
-      display: flex;
-      align-items: center;
-      isolation: isolate;
-      background-image:
-        linear-gradient(90deg, rgba(4, 4, 4, 0.92) 0%, rgba(4, 4, 4, 0.7) 44%, rgba(4, 4, 4, 0.18) 100%),
-        linear-gradient(180deg, rgba(0, 0, 0, 0.15) 35%, rgba(0, 0, 0, 0.75) 100%),
-        url("hero.jpg");
-      background-position: center;
-      background-size: cover;
-    }
-
-    .hero-content {
-      max-width: 860px;
-      padding: 150px 0 84px;
-    }
-
-    .hero-address {
-      margin-bottom: 27px;
-      color: rgba(255, 255, 255, 0.83);
-      font-size: clamp(1rem, 2vw, 1.18rem);
-      letter-spacing: 0.025em;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .hero-details {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0;
-      margin-top: 42px;
-      border-top: 1px solid rgba(255, 255, 255, 0.23);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.23);
-    }
-
-    .hero-detail {
-      min-width: 150px;
-      padding: 18px 24px 18px 0;
-      margin-right: 24px;
-      border-right: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .hero-detail:last-child {
-      border-right: 0;
-    }
-
-    .hero-detail strong,
-    .hero-detail span {
-      display: block;
-    }
-
-    .hero-detail strong {
-      color: var(--white);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.35rem;
-      font-weight: 400;
-    }
-
-    .hero-detail span {
-      margin-top: 2px;
-      color: rgba(255, 255, 255, 0.66);
-      font-size: 0.67rem;
-      font-weight: 700;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-    }
-
-    /* OVERVIEW */
-    .overview-grid {
-      display: grid;
-      grid-template-columns: 0.88fr 1.12fr;
-      gap: 70px;
-      align-items: center;
-    }
-
-    .overview-copy p:not(.eyebrow) {
-      color: var(--muted);
-      font-size: 1.04rem;
-    }
-
-    .overview-image {
-      position: relative;
-      min-height: 590px;
-    }
-
-    .overview-image-main {
-      height: 530px;
-      object-fit: cover;
-      box-shadow: var(--shadow);
-    }
-
-    .overview-image-small {
-      position: absolute;
-      right: -24px;
-      bottom: 0;
-      width: 46%;
-      height: 250px;
-      object-fit: cover;
-      border: 10px solid var(--black);
-      box-shadow: var(--shadow);
-    }
-
-    .overview-note {
-      margin-top: 30px;
-      padding: 22px 0 0 22px;
-      border-top: 1px solid var(--line);
-      border-left: 2px solid var(--gold);
-      color: var(--cream);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.23rem;
-      line-height: 1.45;
-    }
-
-    /* GALLERY */
-    .section-heading {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 40px;
-      margin-bottom: 38px;
-    }
-
-    .section-heading > div {
-      max-width: 740px;
-    }
-
-    .section-heading > p {
-      max-width: 380px;
-      margin-bottom: 10px;
-      color: var(--muted);
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: 1.35fr 0.9fr 0.9fr;
-      grid-template-rows: 280px 280px;
-      gap: 14px;
-    }
-
-    .gallery-item {
-      overflow: hidden;
-      background: var(--charcoal);
-    }
-
-    .gallery-item:first-child {
-      grid-row: 1 / 3;
-    }
-
-    .gallery-item img {
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.45s ease;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.025);
-    }
-
-    /* FEATURES */
-    .features-grid {
-      display: grid;
-      grid-template-columns: 0.83fr 1.17fr;
-      gap: 70px;
-      align-items: start;
-    }
-
-    .features-intro {
-      position: sticky;
-      top: 40px;
-    }
-
-    .features-intro p:not(.eyebrow) {
-      color: var(--muted);
-    }
-
-    .feature-list {
-      border-top: 1px solid var(--line);
-    }
-
-    .feature-row {
-      display: grid;
-      grid-template-columns: 52px 1fr;
-      gap: 20px;
-      padding: 25px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .feature-number {
-      color: var(--gold-light);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.05rem;
-    }
-
-    .feature-row h3 {
-      margin-bottom: 5px;
-    }
-
-    .feature-row p {
-      margin-bottom: 0;
-      color: var(--muted);
-    }
-
-    /* LOCATION */
-    .location-wrap {
-      position: relative;
-      min-height: 610px;
-      display: grid;
-      align-items: center;
-      overflow: hidden;
-      background-image:
-        linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.75) 48%, rgba(0, 0, 0, 0.25) 100%),
-        url("gallery-4.jpg");
-      background-position: center;
-      background-size: cover;
-    }
-
-    .location-copy {
-      max-width: 650px;
-      padding: 70px 0;
-    }
-
-    .location-copy > p:not(.eyebrow) {
-      color: rgba(255, 255, 255, 0.74);
-      font-size: 1.04rem;
-    }
-
-    .location-points {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0 28px;
-      margin-top: 32px;
-      border-top: 1px solid rgba(255, 255, 255, 0.22);
-    }
-
-    .location-point {
-      padding: 15px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.22);
-      color: rgba(255, 255, 255, 0.88);
-      font-size: 0.88rem;
-    }
-
-    /* FAQ */
-    .faq-wrap {
-      max-width: 920px;
-      margin: 0 auto;
-    }
-
-    .faq-heading {
-      margin-bottom: 36px;
-      text-align: center;
-    }
-
-    .faq-list {
-      border-top: 1px solid var(--line);
-    }
-
-    details {
-      border-bottom: 1px solid var(--line);
-    }
-
-    summary {
-      position: relative;
-      padding: 23px 46px 23px 0;
-      list-style: none;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.16rem;
-      cursor: pointer;
-    }
-
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    summary::after {
-      content: "+";
-      position: absolute;
-      top: 20px;
-      right: 4px;
-      color: var(--gold-light);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.35rem;
-      font-weight: 300;
-    }
-
-    details[open] summary::after {
-      content: "−";
-    }
-
-    details p {
-      max-width: 760px;
-      padding-bottom: 23px;
-      margin-bottom: 0;
-      color: var(--muted);
-    }
-
-    /* INQUIRE */
-    .inquire-section {
-      padding: 94px 0;
-      background: var(--cream);
-      color: var(--black);
-    }
-
-    .inquire-grid {
-      display: grid;
-      grid-template-columns: 0.92fr 1.08fr;
-      gap: 70px;
-      align-items: start;
-    }
-
-    .inquire-copy .eyebrow {
-      color: #7a6039;
-    }
-
-    .inquire-copy p:not(.eyebrow) {
-      color: #5f5b55;
-      font-size: 1.02rem;
-    }
-
-    .contact-list {
-      display: grid;
-      gap: 8px;
-      margin-top: 30px;
-      padding-top: 24px;
-      border-top: 1px solid rgba(0, 0, 0, 0.18);
-    }
-
-    .contact-list a {
-      width: fit-content;
-      font-weight: 700;
-    }
-
-    .property-form {
-      padding: 36px;
-      background: var(--white);
-      box-shadow: 0 18px 55px rgba(34, 28, 18, 0.12);
-    }
-
-    .form-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .form-field {
-      display: grid;
-      gap: 7px;
-    }
-
-    .form-field.full {
-      grid-column: 1 / -1;
-    }
-
-    label {
-      color: #3f3b35;
-      font-size: 0.74rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      border: 1px solid rgba(0, 0, 0, 0.18);
-      border-radius: 0;
-      background: var(--white);
-      color: var(--black);
-      outline: none;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    input {
-      height: 51px;
-      padding: 0 13px;
-    }
-
-    textarea {
-      min-height: 130px;
-      padding: 13px;
-      resize: vertical;
-    }
-
-    input:focus,
-    textarea:focus {
-      border-color: #8c6a37;
-      box-shadow: 0 0 0 3px rgba(140, 106, 55, 0.1);
-    }
-
-    .submit-button {
-      width: 100%;
-      margin-top: 19px;
-      border: 0;
-    }
-
-    .form-note {
-      margin: 14px 0 0;
-      color: #7b756c;
-      font-size: 0.72rem;
-      line-height: 1.45;
-    }
-
-    .form-status {
-      min-height: 1.4em;
-      margin: 11px 0 0;
-      font-size: 0.82rem;
-      font-weight: 700;
-    }
-
-    .form-status.success {
-      color: #2d6e42;
-    }
-
-    .form-status.error {
-      color: #a23636;
-    }
-
-    /* FOOTER */
-    .footer {
-      padding: 46px 0 95px;
-      border-top: 1px solid var(--line);
-      background: #070707;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 45px;
-      align-items: start;
-    }
-
-    .footer-brand {
-      display: flex;
-      align-items: center;
-      gap: 13px;
-    }
-
-    .footer-brand img {
-      width: 52px;
-      height: 52px;
-      object-fit: cover;
-    }
-
-    .footer-brand strong,
-    .footer-brand span {
-      display: block;
-    }
-
-    .footer-brand span {
-      margin-top: 4px;
-      color: var(--muted);
-      font-size: 0.75rem;
-    }
-
-    .legal {
-      margin: 0;
-      color: #8f8980;
-      font-size: 0.73rem;
-    }
-
-    .mobile-cta {
-      display: none;
-      position: fixed;
-      right: 12px;
-      bottom: 12px;
-      left: 12px;
-      z-index: 90;
-      min-height: 52px;
-      align-items: center;
-      justify-content: center;
-      background: var(--gold);
-      color: #12100d;
-      font-size: 0.8rem;
-      font-weight: 800;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      box-shadow: 0 14px 38px rgba(0, 0, 0, 0.42);
-    }
-
-    @media (max-width: 980px) {
-      .nav-links a:not(.nav-button) {
-        display: none;
-      }
-
-      .overview-grid,
-      .features-grid,
-      .inquire-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .overview-image {
-        max-width: 760px;
-      }
-
-      .features-intro {
-        position: static;
-      }
-
-      .gallery-grid {
-        grid-template-columns: 1.35fr 1fr;
-        grid-template-rows: repeat(3, 240px);
-      }
-
-      .gallery-item:first-child {
-        grid-row: 1 / 3;
-      }
-
-      .gallery-item:last-child {
-        grid-column: 1 / -1;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 720px) {
-      .container {
-        width: min(var(--max-width), calc(100% - 28px));
-      }
-
-      .section {
-        padding: 70px 0;
-      }
-
-      .header-inner {
-        min-height: 68px;
-      }
-
-      .brand img {
-        width: 40px;
-        height: 40px;
-      }
-
-      .brand-text strong {
-        font-size: 0.78rem;
-      }
-
-      .brand-text span {
-        display: none;
-      }
-
-      .nav-button {
-        padding: 9px 12px;
-        font-size: 0.67rem;
-      }
-
-      .hero {
-        min-height: 720px;
-        background-position: 62% center;
-      }
-
-      .hero-content {
-        padding-top: 122px;
-      }
-
-      h1 {
-        font-size: clamp(3rem, 14vw, 4.2rem);
-      }
-
-      .hero-actions {
-        display: grid;
-      }
-
-      .hero-actions .button {
-        width: 100%;
-      }
-
-      .hero-details {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .hero-detail {
-        min-width: 0;
-        margin-right: 0;
-        padding: 14px 12px 14px 0;
-        border-right: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-      }
-
-      .overview-grid,
-      .features-grid,
-      .inquire-grid {
-        gap: 42px;
-      }
-
-      .overview-image {
-        min-height: 470px;
-      }
-
-      .overview-image-main {
-        height: 415px;
-      }
-
-      .overview-image-small {
-        right: -8px;
-        width: 50%;
-        height: 190px;
-        border-width: 7px;
-      }
-
-      .section-heading {
-        display: block;
-      }
-
-      .section-heading > p {
-        margin-top: 12px;
-      }
-
-      .gallery-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 300px repeat(4, 215px);
-      }
-
-      .gallery-item:first-child,
-      .gallery-item:last-child {
-        grid-column: auto;
-        grid-row: auto;
-      }
-
-      .location-wrap {
-        min-height: 650px;
-        background-position: 65% center;
-      }
-
-      .location-points {
-        grid-template-columns: 1fr;
-      }
-
-      .form-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .form-field.full {
-        grid-column: auto;
-      }
-
-      .property-form {
-        padding: 25px 20px;
-      }
-
-      .footer {
-        padding-bottom: 105px;
-      }
-
-      .mobile-cta {
-        display: flex;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        transition: none !important;
-      }
-    }
+    :root{
+      --bg:#0b0b0c;
+      --bg-soft:#121214;
+      --bg-card:#141416;
+      --text:#f5f2eb;
+      --muted:#b6b0a5;
+      --line:rgba(255,255,255,.10);
+      --gold:#c8a46a;
+      --gold-2:#d6b57f;
+      --shadow:0 20px 60px rgba(0,0,0,.45);
+      --max:1200px;
+      --radius:22px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
+      overflow-x:hidden;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    .container{width:min(var(--max), calc(100% - 40px));margin:0 auto}
+
+    .nav{
+      position:sticky;top:0;z-index:1000;
+      background:rgba(10,10,11,.72);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+
+    .brand{
+      display:flex;align-items:center;gap:12px;
+      letter-spacing:.18em;text-transform:uppercase;
+      font-size:.8rem;color:var(--text);font-weight:600;
+    }
+
+    .nav-links{display:flex;gap:26px;flex-wrap:wrap;justify-content:flex-end}
+    .nav-links a{font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,242,235,.82);transition:color .25s ease, opacity .25s ease}
+    .nav-links a:hover{color:var(--gold-2)}
+
+    .hero{
+      position:relative;
+      min-height:calc(100vh - 72px);
+      display:flex;align-items:flex-end;
+      background:
+        linear-gradient(90deg, rgba(11,11,12,.92) 0%, rgba(11,11,12,.78) 44%, rgba(11,11,12,.22) 100%),
+        linear-gradient(180deg, rgba(11,11,12,.18) 0%, rgba(11,11,12,.62) 100%),
+        url('hero.jpg') center/cover no-repeat;
+    }
+
+    .hero::after{
+      content:"";position:absolute;inset:0;
+      background:radial-gradient(circle at 20% 20%, rgba(200,164,106,.12), transparent 28%), radial-gradient(circle at 80% 10%, rgba(255,255,255,.05), transparent 18%);
+      pointer-events:none;
+    }
+
+    .hero-inner{position:relative;z-index:1;padding:90px 0 42px;width:100%}
+
+    .eyebrow{display:inline-flex;align-items:center;gap:12px;color:rgba(245,242,235,.7);text-transform:uppercase;letter-spacing:.28em;font-size:.72rem;margin-bottom:18px}
+    .eyebrow::before{content:"";width:36px;height:1px;background:rgba(200,164,106,.75)}
+    .price{color:var(--gold-2);font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.1rem;margin-bottom:12px}
+
+    h1{margin:0;max-width:820px;font-size:clamp(3rem, 7vw, 6.5rem);line-height:.94;letter-spacing:-.04em;text-wrap:balance}
+    .subhead{margin-top:22px;max-width:720px;color:rgba(245,242,235,.82);font-size:1.05rem;letter-spacing:.06em;text-transform:uppercase}
+    .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;border-radius:999px;border:1px solid var(--line);text-transform:uppercase;letter-spacing:.15em;font-size:.78rem;transition:transform .2s ease, background .2s ease, border-color .2s ease, color .2s ease;cursor:pointer;font-family:inherit}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#1a140d;border-color:transparent;box-shadow:0 10px 30px rgba(200,164,106,.22)}
+    .btn.secondary{background:rgba(255,255,255,.02);color:var(--text)}
+    .btn.secondary:hover{border-color:rgba(214,181,127,.55);color:var(--gold-2)}
+
+    .hero-meta{margin-top:28px;display:flex;gap:22px;flex-wrap:wrap;color:rgba(245,242,235,.62);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase}
+    .stats{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+    .stat{padding:26px 18px;text-align:center;border-right:1px solid var(--line)}
+    .stat:last-child{border-right:none}
+    .stat strong{display:block;font-size:1.35rem;font-weight:500;letter-spacing:-.02em}
+    .stat span{display:block;margin-top:8px;color:var(--muted);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
+
+    section{padding:92px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:30px}
+    .kicker{color:var(--gold-2);letter-spacing:.24em;text-transform:uppercase;font-size:.74rem;margin-bottom:12px}
+    h2{margin:0;font-size:clamp(2rem,4vw,3.1rem);line-height:1.02;letter-spacing:-.03em}
+    .lead{max-width:660px;color:var(--muted);font-size:1.04rem}
+    .panel{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .overview{padding:34px}
+    .overview p{margin:0;color:rgba(245,242,235,.84);font-size:1.05rem;max-width:980px}
+
+    .gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px}
+    .photo{position:relative;overflow:hidden;border-radius:20px;min-height:240px;background:#19191c;border:1px solid var(--line)}
+    .photo.big{grid-row:span 2;min-height:494px}
+    .photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+    .photo:hover img{transform:scale(1.03)}
+    .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.16));pointer-events:none}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{padding:22px;border-radius:20px;background:rgba(255,255,255,.03);border:1px solid var(--line);transition:transform .2s ease,border-color .2s ease,background .2s ease}
+    .feature:hover{transform:translateY(-2px);border-color:rgba(214,181,127,.35);background:rgba(255,255,255,.045)}
+    .feature h3{margin:0 0 8px;font-size:1rem;letter-spacing:-.01em}
+    .feature p{margin:0;color:var(--muted);font-size:.96rem}
+
+    .location-wrap,.faq-wrap,.inquire-wrap{padding:34px}
+    .location-copy{max-width:940px;color:rgba(245,242,235,.84);font-size:1.04rem}
+    .faq{display:grid;gap:12px;margin-top:16px}
+    details{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+    summary{cursor:pointer;list-style:none;font-weight:500;letter-spacing:-.01em}
+    summary::-webkit-details-marker{display:none}
+    details p{margin:12px 0 0;color:var(--muted)}
+
+    .inquire-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:18px}
+    .form{display:grid;gap:14px}
+    .field{display:grid;gap:8px}
+    label{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,242,235,.72)}
+    input,textarea{width:100%;background:#0f0f11;border:1px solid var(--line);color:var(--text);border-radius:16px;padding:14px 16px;font:inherit;outline:none}
+    input:focus,textarea:focus{border-color:rgba(214,181,127,.55);box-shadow:0 0 0 3px rgba(200,164,106,.12)}
+    textarea{min-height:130px;resize:vertical}
+    .contact-box{padding:24px;border-radius:20px;background:rgba(255,255,255,.03);border:1px solid var(--line);display:grid;align-content:start;gap:14px}
+    .contact-box a{color:var(--gold-2)}
+    .fine{color:var(--muted);font-size:.94rem}
+    footer{padding:36px 0 60px;color:rgba(245,242,235,.5);border-top:1px solid var(--line);font-size:.9rem}
+
+    @media (max-width:980px){.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2n){border-right:none}.gallery-grid{grid-template-columns:1fr 1fr}.photo.big{grid-column:1/-1;min-height:380px}.features{grid-template-columns:1fr 1fr}.inquire-grid{grid-template-columns:1fr}}
+    @media (max-width:720px){.nav-inner{align-items:flex-start;padding:14px 0;flex-direction:column}.nav-links{gap:16px}.brand{letter-spacing:.13em;font-size:.72rem}.hero{min-height:auto}.hero-inner{padding:80px 0 36px}.subhead{font-size:.92rem}.stats-grid{grid-template-columns:1fr}.stat{border-right:none;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:none}section{padding:72px 0}.section-head{flex-direction:column;align-items:flex-start}.gallery-grid,.features{grid-template-columns:1fr}.photo.big{min-height:300px}.overview,.location-wrap,.faq-wrap,.inquire-wrap{padding:24px}}
   </style>
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="The Jacques Real Estate Team home">
-        <img src="team-logo.png" alt="The Jacques Real Estate Team logo" />
-        <span class="brand-text">
-          <strong>The Jacques Real Estate Team</strong>
-          <span>KW Reserve Palm Beach</span>
-        </span>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#" aria-label="The Jacques Real Estate Team homepage">
+        <div>The Jacques Real Estate Team</div>
       </a>
-
-      <nav class="nav-links" aria-label="Property page navigation">
+      <nav class="nav-links" aria-label="Primary">
         <a href="#overview">Overview</a>
         <a href="#gallery">Gallery</a>
         <a href="#features">Features</a>
         <a href="#location">Location</a>
         <a href="#faq">FAQ</a>
-        <a class="nav-button" href="#inquire">Inquire</a>
+        <a href="#inquire">Inquire</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero" aria-label="425 Churchill Road property introduction">
-      <div class="container hero-content">
-        <p class="eyebrow">West Palm Beach · South of Southern</p>
-        <h1>A Rare Triplex Opportunity in SoSo</h1>
-        <p class="hero-address">425 Churchill Rd, West Palm Beach, FL 33405</p>
-
-        <div class="hero-actions">
-          <a class="button button-primary" href="#overview">Explore the Residence</a>
-          <a class="button button-outline" href="#inquire">Schedule Private Tour</a>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="eyebrow">Exclusive listing · West Palm Beach</div>
+        <div class="price">Offered at $750,000</div>
+        <h1>A Rare Triplex Offering in SoSo</h1>
+        <div class="subhead">425 Churchill Road · West Palm Beach, FL 33405</div>
+        <div class="cta-row">
+          <a class="btn primary" href="#overview">Explore the Property</a>
+          <a class="btn secondary" href="#inquire">Request Details</a>
         </div>
-
-        <div class="hero-details" aria-label="Key property facts">
-          <div class="hero-detail">
-            <strong>3</strong>
-            <span>Residential Units</span>
-          </div>
-          <div class="hero-detail">
-            <strong>2</strong>
-            <span>Separate Buildings</span>
-          </div>
-          <div class="hero-detail">
-            <strong>2,260</strong>
-            <span>Approx. Sq. Ft.</span>
-          </div>
-          <div class="hero-detail">
-            <strong>$750,000</strong>
-            <span>Offered At</span>
-          </div>
+        <div class="hero-meta">
+          <span>SoSo</span>
+          <span>Two Separate Buildings</span>
+          <span>Income-Producing Potential</span>
         </div>
       </div>
     </section>
 
-    <section class="section" id="overview">
-      <div class="container overview-grid">
-        <div class="overview-copy">
-          <p class="eyebrow">Property Overview</p>
-          <h2>One property with multiple ways to make it work.</h2>
-          <p>
-            Located in West Palm Beach's South of Southern area, this triplex includes two
-            buildings and three residential units on one lot. The configuration offers
-            flexibility for an investor, multigenerational household, or owner-occupant
-            interested in rental-income potential.
-          </p>
-          <p>
-            The main residence offers 2 bedrooms and 1.5 bathrooms. The second building
-            contains two separate 1-bedroom, 1-bathroom units, with separate water and
-            electric meters for the two smaller residences.
-          </p>
-          <div class="overview-note">
-            A distinctive opportunity near Flagler Drive, the Intracoastal, Downtown West
-            Palm Beach, and the city's growing business corridor.
-          </div>
-        </div>
-
-        <div class="overview-image" aria-label="Property image collage">
-          <img class="overview-image-main" src="hero.jpg" alt="Exterior of 425 Churchill Road" />
-          <img class="overview-image-small" src="gallery-2.jpg" alt="Kitchen inside 425 Churchill Road" loading="lazy" />
-        </div>
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat"><strong>Triplex</strong><span>Property Type</span></div>
+        <div class="stat"><strong>4</strong><span>Bedrooms</span></div>
+        <div class="stat"><strong>4.5</strong><span>Bathrooms</span></div>
+        <div class="stat"><strong>2,260</strong><span>Sq Ft</span></div>
+        <div class="stat"><strong>1960</strong><span>Built</span></div>
       </div>
     </section>
 
-    <section class="section section-dark" id="gallery">
+    <section id="overview">
       <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Gallery</p>
-            <h2>Explore the property and its separate living spaces.</h2>
-          </div>
-          <p>
-            View the exterior, interior rooms, kitchens, and outdoor areas included across
-            the property.
-          </p>
+        <div class="section-head">
+          <div><div class="kicker">Overview</div><h2>Flexible rental potential in one of West Palm Beach’s most talked-about neighborhoods.</h2></div>
+          <div class="lead">A rare multi-family opportunity in the heart of SoSo, just minutes from Downtown West Palm Beach, Flagler Drive, and the Intracoastal.</div>
         </div>
+        <div class="panel overview">
+          <p>425 Churchill Road is a rare triplex offering in the heart of SoSo with two separate buildings on one lot. Building 1 features a spacious 2-bedroom, 2.5-bath residence that can work well for an owner-occupant or as a rental. Building 2 includes two individual 1-bedroom, 1-bath units, each with separate water and electric meters. With 2,260 square feet of living space, flexible rental possibilities, and a location near Downtown West Palm Beach, Flagler Drive, the Intracoastal, and the growing financial corridor, this property offers several paths for investors or buyers looking to live in one unit while renting the others.</p>
+        </div>
+      </div>
+    </section>
 
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">Gallery</div><h2>Multiple residences, updated living spaces, and a strong SoSo location.</h2></div>
+          <div class="lead">A curated look at the property’s exterior, interiors, kitchens, baths, and rental-ready layout.</div>
+        </div>
         <div class="gallery-grid">
-          <figure class="gallery-item">
-            <img src="hero.jpg" alt="Exterior view of the triplex" loading="lazy" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="gallery-2.jpg" alt="Bright kitchen in the property" loading="lazy" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="gallery-3.jpg" alt="Bedroom and bathroom interior" loading="lazy" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="gallery-4.jpg" alt="Outdoor walkway beside a residential unit" loading="lazy" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="gallery-5.jpg" alt="Kitchen in one of the residential units" loading="lazy" />
-          </figure>
+          <div class="photo big"><img src="hero.jpg" alt="425 Churchill Road hero property image" /></div>
+          <div class="photo"><img src="gallery-2.jpg" alt="425 Churchill Road property photo 2" /></div>
+          <div class="photo"><img src="gallery-3.jpg" alt="425 Churchill Road property photo 3" /></div>
+          <div class="photo"><img src="gallery-4.jpg" alt="425 Churchill Road property photo 4" /></div>
+          <div class="photo"><img src="gallery-5.jpg" alt="425 Churchill Road property photo 5" /></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="features">
-      <div class="container features-grid">
-        <div class="features-intro">
-          <p class="eyebrow">Property Features</p>
-          <h2>Designed for flexibility, privacy, and income potential.</h2>
-          <p>
-            Each space remains distinct while the overall configuration supports several
-            ownership strategies.
-          </p>
-          <a class="button button-primary" href="#inquire">Request Full Details</a>
-        </div>
-
-        <div class="feature-list">
-          <article class="feature-row">
-            <span class="feature-number">01</span>
-            <div>
-              <h3>Two Buildings on One Lot</h3>
-              <p>A separate main residence and rear building help maintain privacy between the units.</p>
-            </div>
-          </article>
-          <article class="feature-row">
-            <span class="feature-number">02</span>
-            <div>
-              <h3>Three Residential Units</h3>
-              <p>One 2-bedroom, 1.5-bath residence plus two 1-bedroom, 1-bath units.</p>
-            </div>
-          </article>
-          <article class="feature-row">
-            <span class="feature-number">03</span>
-            <div>
-              <h3>Separate Utilities</h3>
-              <p>The two one-bedroom units have separate water and electric meters.</p>
-            </div>
-          </article>
-          <article class="feature-row">
-            <span class="feature-number">04</span>
-            <div>
-              <h3>Owner-Occupant Opportunity</h3>
-              <p>Live in one residence while using the additional units for potential rental income.</p>
-            </div>
-          </article>
-          <article class="feature-row">
-            <span class="feature-number">05</span>
-            <div>
-              <h3>Outdoor and Storage Areas</h3>
-              <p>Courtyard, fenced spaces, patio and porch areas, and storage add everyday function.</p>
-            </div>
-          </article>
-          <article class="feature-row">
-            <span class="feature-number">06</span>
-            <div>
-              <h3>Central West Palm Beach Location</h3>
-              <p>Convenient to the waterfront, Downtown West Palm Beach, dining, shopping, and major roads.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="location-wrap" id="location">
+    <section id="features">
       <div class="container">
-        <div class="location-copy">
-          <p class="eyebrow">Location</p>
-          <h2>South of Southern convenience in West Palm Beach.</h2>
-          <p>
-            425 Churchill Rd is positioned near established neighborhoods, the Intracoastal,
-            Flagler Drive, Downtown West Palm Beach, local dining, shopping, and the city's
-            growing financial corridor.
-          </p>
+        <div class="section-head">
+          <div><div class="kicker">Features</div><h2>Designed for flexibility, rental income, and long-term opportunity.</h2></div>
+          <div class="lead">The property layout creates options for an investor, owner-occupant, seasonal rental strategy, or multi-unit rental portfolio.</div>
+        </div>
+        <div class="features">
+          <div class="feature"><h3>Rare triplex offering</h3><p>Three separate living units create immediate multi-family flexibility.</p></div>
+          <div class="feature"><h3>Two separate buildings</h3><p>A smart setup with one larger residence and two additional individual units.</p></div>
+          <div class="feature"><h3>2BR / 2.5BA main residence</h3><p>Building 1 offers a spacious layout suited for owner use or rental income.</p></div>
+          <div class="feature"><h3>Two 1BR / 1BA units</h3><p>Building 2 includes two individual units that can support additional rental options.</p></div>
+          <div class="feature"><h3>Separate utilities</h3><p>The one-bedroom units include separate water and electric meters.</p></div>
+          <div class="feature"><h3>2,260 square feet</h3><p>Generous total living area across the property’s multi-unit layout.</p></div>
+          <div class="feature"><h3>Owner-occupant option</h3><p>Live in one unit while renting the other two to help offset housing costs.</p></div>
+          <div class="feature"><h3>Rental portfolio potential</h3><p>Hold all three units as part of a long-term rental strategy.</p></div>
+          <div class="feature"><h3>Seasonal rental potential</h3><p>The location may support seasonal rental interest, subject to local rules and buyer verification.</p></div>
+          <div class="feature"><h3>SoSo location</h3><p>Positioned in one of West Palm Beach’s highly watched South End neighborhoods.</p></div>
+          <div class="feature"><h3>Near the Intracoastal</h3><p>Close to Flagler Drive, waterfront paths, and nearby Palm Beach County destinations.</p></div>
+          <div class="feature"><h3>Downtown access</h3><p>Convenient to Downtown West Palm Beach, dining, shopping, business, and entertainment.</p></div>
+        </div>
+      </div>
+    </section>
 
-          <div class="location-points">
-            <div class="location-point">Near Flagler Drive and the Intracoastal</div>
-            <div class="location-point">Convenient access to Downtown West Palm Beach</div>
-            <div class="location-point">Close to dining and shopping</div>
-            <div class="location-point">Easy connections to major roadways</div>
+    <section id="location">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">Location</div><h2>SoSo convenience near the Intracoastal, Downtown West Palm Beach, and everyday essentials.</h2></div>
+          <div class="lead">A South End location with access to dining, shopping, Flagler Drive, the waterfront, Palm Beach, and the growing West Palm Beach business corridor.</div>
+        </div>
+        <div class="panel location-wrap">
+          <p class="location-copy">Located in the SoSo area of West Palm Beach, 425 Churchill Road places residents near the Intracoastal, Flagler Drive, Downtown West Palm Beach, Palm Beach, local dining, shopping, parks, and major routes. The location supports both daily convenience and rental demand, with proximity to the waterfront, employment centers, and the continued growth of the West Palm Beach financial corridor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">FAQ</div><h2>Helpful details for prospective buyers.</h2></div>
+          <div class="lead">Quick answers to common questions about the property, layout, location, and private showing options.</div>
+        </div>
+        <div class="panel faq-wrap">
+          <div class="faq">
+            <details><summary>Where is 425 Churchill Road located?</summary><p>It is located in West Palm Beach, Florida, in the SoSo area near Flagler Drive and the Intracoastal.</p></details>
+            <details><summary>What type of property is this?</summary><p>425 Churchill Road is a triplex with three separate living units across two buildings.</p></details>
+            <details><summary>How is the property configured?</summary><p>Building 1 features a 2-bedroom, 2.5-bath residence. Building 2 offers two individual 1-bedroom, 1-bath units.</p></details>
+            <details><summary>How large is the property?</summary><p>The property offers approximately 2,260 square feet of living space.</p></details>
+            <details><summary>What is the lot size?</summary><p>Listing sources report the lot at approximately 6,970 square feet.</p></details>
+            <details><summary>Is this property a fit for an investor?</summary><p>Yes. The triplex layout offers potential for long-term rental income, seasonal rental strategy, or living in one unit while renting the others. Buyers should verify rental rules, income projections, and local requirements.</p></details>
+            <details><summary>How do I request more information or schedule a private showing?</summary><p>Use the inquiry form below or contact The Jacques Real Estate Team directly by email or phone.</p></details>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark" id="faq">
-      <div class="container faq-wrap">
-        <div class="faq-heading">
-          <p class="eyebrow">Frequently Asked Questions</p>
-          <h2>What buyers may want to know.</h2>
+    <section id="inquire">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">Inquire</div><h2>Request pricing details, private showing options, or additional property information.</h2></div>
+          <div class="lead">Connect with The Jacques Real Estate Team for details about 425 Churchill Road.</div>
         </div>
-
-        <div class="faq-list">
-          <details>
-            <summary>How is the property configured?</summary>
-            <p>
-              The property includes two buildings. The main building contains a 2-bedroom,
-              1.5-bath residence, while the second building contains two separate 1-bedroom,
-              1-bath units.
-            </p>
-          </details>
-          <details>
-            <summary>What is the approximate living area?</summary>
-            <p>The listing reflects approximately 2,260 square feet across the property.</p>
-          </details>
-          <details>
-            <summary>Are any utilities separately metered?</summary>
-            <p>
-              The two one-bedroom units have separate water and electric meters. Request the
-              complete property details for additional utility information.
-            </p>
-          </details>
-          <details>
-            <summary>Could this work for an owner-occupant?</summary>
-            <p>
-              The configuration may appeal to a buyer who wants to live in one unit while using
-              the others for potential rental income, subject to the buyer's plans and due diligence.
-            </p>
-          </details>
-          <details>
-            <summary>How can I request pricing or schedule a showing?</summary>
-            <p>
-              Complete the inquiry form below or contact The Jacques Real Estate Team at
-              (561) 678-5584.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="inquire-section" id="inquire">
-      <div class="container inquire-grid">
-        <div class="inquire-copy">
-          <p class="eyebrow">Private Inquiry</p>
-          <h2>Request pricing, full property details, or a private tour.</h2>
-          <p>
-            Complete the form and a member of The Jacques Real Estate Team will follow up
-            regarding 425 Churchill Rd.
-          </p>
-
-          <div class="contact-list">
-            <a href="tel:+15616785584">(561) 678-5584</a>
-            <a href="mailto:info@jacquesrealty.com">info@jacquesrealty.com</a>
+        <div class="panel inquire-wrap">
+          <div class="inquire-grid">
+            <form class="form" action="https://formspree.io/f/xdaqwkjn" method="POST">
+              <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required /></div>
+              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required /></div>
+              <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" /></div>
+              <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us what you'd like to know about 425 Churchill Road."></textarea></div>
+              <input type="hidden" name="_subject" value="New inquiry for 425 Churchill Road" />
+              <input type="hidden" name="source" value="425 Churchill Road Landing Page" />
+              <input type="hidden" name="property" value="425 Churchill Road, West Palm Beach, FL 33405" />
+              <input type="hidden" name="lead_type" value="Property Inquiry" />
+              <button class="btn primary" type="submit">Send Inquiry</button>
+            </form>
+            <div class="contact-box">
+              <div class="kicker">The Jacques Real Estate Team</div>
+              <div><a href="mailto:info@jacquesrealty.com">info@jacquesrealty.com</a></div>
+              <div><a href="tel:+15616785584">(561) 678-5584</a></div>
+              <div class="fine">Interested in 425 Churchill Road? Request pricing details, private showing options, or additional property information.</div>
+            </div>
           </div>
         </div>
-
-        <!-- Replace REPLACE_ME with the ID from your Formspree endpoint before publishing. -->
-        <form
-          class="property-form"
-          id="property-form"
-          action="https://formspree.io/f/xdaqwkjn"
-          method="POST"
-        >
-          <div class="form-grid">
-            <div class="form-field">
-              <label for="name">Name</label>
-              <input id="name" type="text" name="name" autocomplete="name" required />
-            </div>
-
-            <div class="form-field">
-              <label for="email">Email</label>
-              <input id="email" type="email" name="email" autocomplete="email" required />
-            </div>
-
-            <div class="form-field">
-              <label for="phone">Phone</label>
-              <input id="phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" required />
-            </div>
-
-            <div class="form-field">
-              <label for="interest">I Am Interested In</label>
-              <input id="interest" type="text" name="interest" value="425 Churchill Rd" />
-            </div>
-
-            <div class="form-field full">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="I would like pricing details or to schedule a private showing."
-              ></textarea>
-            </div>
-          </div>
-
-          <input type="hidden" name="_subject" value="New inquiry for 425 Churchill Rd" />
-          <input type="hidden" name="source" value="425 Churchill Rd Landing Page" />
-          <input type="hidden" name="property" value="425 Churchill Rd, West Palm Beach, FL 33405" />
-          <input type="hidden" name="lead_type" value="Property Inquiry" />
-          <input type="hidden" name="campaign" value="425 Churchill Rd" />
-          <input type="hidden" name="mls_number" value="B26053105" />
-          <input type="hidden" name="page_url" id="page-url" />
-          <input type="hidden" name="utm_source" id="utm-source" />
-          <input type="hidden" name="utm_medium" id="utm-medium" />
-          <input type="hidden" name="utm_campaign" id="utm-campaign" />
-
-          <button class="button button-primary submit-button" type="submit">
-            Send Inquiry
-          </button>
-
-          <p class="form-note">
-            By submitting this form, you agree that The Jacques Real Estate Team may contact
-            you by phone, text, or email regarding your inquiry. Message and data rates may apply.
-          </p>
-          <p class="form-status" id="form-status" aria-live="polite"></p>
-        </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="team-logo.png" alt="The Jacques Real Estate Team logo" />
-        <div>
-          <strong>The Jacques Real Estate Team</strong>
-          <span>KW Reserve Palm Beach</span>
-        </div>
-      </div>
-
-      <p class="legal">
-        The information presented is deemed reliable but is not guaranteed and is subject to
-        change. Equal Housing Opportunity. Listing availability, price, measurements, and
-        property details should be independently verified.
-      </p>
-    </div>
-  </footer>
-
-  <a class="mobile-cta" href="#inquire">Schedule Private Tour</a>
-
-  <script>
-    const queryParams = new URLSearchParams(window.location.search);
-
-    function setHiddenField(id, value) {
-      const field = document.getElementById(id);
-      if (field) field.value = value || "";
-    }
-
-    function populateTrackingFields() {
-      setHiddenField("page-url", window.location.href);
-      setHiddenField("utm-source", queryParams.get("utm_source"));
-      setHiddenField("utm-medium", queryParams.get("utm_medium"));
-      setHiddenField("utm-campaign", queryParams.get("utm_campaign"));
-    }
-
-    populateTrackingFields();
-
-    const form = document.getElementById("property-form");
-    const formStatus = document.getElementById("form-status");
-
-    form.addEventListener("submit", async (event) => {
-      event.preventDefault();
-
-      if (form.action.includes("REPLACE_ME")) {
-        formStatus.textContent = "Please connect the Formspree endpoint before publishing the form.";
-        formStatus.className = "form-status error";
-        return;
-      }
-
-      const submitButton = form.querySelector("button[type='submit']");
-      const originalButtonText = submitButton.textContent;
-
-      submitButton.disabled = true;
-      submitButton.textContent = "Sending...";
-      formStatus.textContent = "";
-      formStatus.className = "form-status";
-
-      try {
-        const response = await fetch(form.action, {
-          method: "POST",
-          body: new FormData(form),
-          headers: {
-            Accept: "application/json"
-          }
-        });
-
-        if (!response.ok) {
-          throw new Error("Submission failed");
-        }
-
-        form.reset();
-        document.getElementById("interest").value = "425 Churchill Rd";
-        populateTrackingFields();
-
-        formStatus.textContent =
-          "Thank you. Your inquiry has been received, and a member of The Jacques Team will follow up shortly.";
-        formStatus.className = "form-status success";
-      } catch (error) {
-        formStatus.textContent =
-          "The form could not be submitted. Please call (561) 678-5584 or email info@jacquesrealty.com.";
-        formStatus.className = "form-status error";
-      } finally {
-        submitButton.disabled = false;
-        submitButton.textContent = originalButtonText;
-      }
-    });
-  </script>
+  <footer><div class="container">© 2026 The Jacques Real Estate Team. 425 Churchill Road, West Palm Beach, FL 33405.</div></footer>
 </body>
 </html>
